@@ -1,0 +1,28 @@
+function makeLine(length) {
+    let line = '';
+    for (let i = 0; i < length; i++) {
+        line += '#';
+    }
+    return line;
+}
+console.log(makeLine(5))
+
+function makeSquare(length, length) {
+    let square = ''
+    for (let i = 0; i < length; i++) {
+square += makeLine(length) + '\n'
+ }
+ return square.slice(0,-1)
+}
+console.log(makeSquare(5, 5))
+
+function makeRectangle(width, height) {
+    let rectangle = '';
+    for (let i = 0; i < height; i++) {
+    rectangle += makeLine(width) + '\n'
+    }
+    return rectangle.slice(0, -1)
+}
+console.log(makeRectangle(5, 3))
+
+function makeDownwardStairs(height)
