@@ -1,5 +1,13 @@
 //Create an anonymous function and set it equal to a variable.
-
+const anonymous = function(a) {
+    if (typeof a === "number"){
+ a = a*3;
+     } else if (typeof a === "string") {
+        a = "ARRR!"
+     } 
+return a
+}
+console.log(anonymous(45))
 /* Your function should:
 a) If passed a number, return the tripled value.
 b) If passed a string, return the string “ARRR!”
@@ -13,3 +21,7 @@ c) Print the new array to confirm your work.
 */
 
 let arr = ['Elocution', 21, 'Clean teeth', 100];
+let newArr = []
+for (let i = 0; i < arr.length; i++)
+newArr.push(anonymous(arr[i]))
+console.log(newArr)
