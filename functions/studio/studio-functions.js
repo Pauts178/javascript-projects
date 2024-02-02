@@ -110,4 +110,4 @@ function areaOfShape(length, width = length) {
     }
 }
 
-console.log(areaOfShape(7, 7))
+console.log(areaOfShape(7))
